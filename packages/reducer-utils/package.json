@@ -1,0 +1,31 @@
+{
+  "name": "@jasonsbarr/reducer-utils",
+  "version": "0.0.0",
+  "description": "Utilities for working with reducers",
+  "keywords": [
+    "react",
+    "reducer",
+    "utils"
+  ],
+  "author": "Jason Barr <jason@jasonsbarr.com>",
+  "homepage": "https://github.com/jasonsbarr/react-hooks-and-utils#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonsbarr/react-hooks-and-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonsbarr/react-hooks-and-utils/issues"
+  }
+}
