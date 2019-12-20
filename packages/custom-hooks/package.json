@@ -26,5 +26,8 @@
   },
   "bugs": {
     "url": "https://github.com/jasonsbarr/react-hooks-and-utils/issues"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
   }
 }
