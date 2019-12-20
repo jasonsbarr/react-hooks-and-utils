@@ -6,6 +6,9 @@
     "React",
     "hooks"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Jason Barr <jason@jasonsbarr.com>",
   "homepage": "https://github.com/jasonsbarr/react-hooks-and-utils#readme",
   "license": "MIT",
