@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const reducerUtils = require('..');
+const reducerUtils = require("..");
 
-describe('reducer-utils', () => {
-    it('needs tests');
+describe("reducer-utils", () => {
+  it("needs tests");
 });

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const customHooks = require('..');
+const customHooks = require("..");
 
-describe('custom-hooks', () => {
-    it('needs tests');
+describe("custom-hooks", () => {
+  it("needs tests");
 });
