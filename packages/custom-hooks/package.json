@@ -11,11 +11,11 @@
   "license": "MIT",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -26,5 +26,6 @@
   },
   "bugs": {
     "url": "https://github.com/jasonsbarr/react-hooks-and-utils/issues"
-  }
+  },
+  "gitHead": "a2b49530bea3f548e65fa04efa8f937374952279"
 }
