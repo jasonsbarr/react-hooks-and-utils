@@ -34,7 +34,7 @@ useEffect(() => {
   handleRequest({
     url: "/posts?_limit=10"
   })
-// using an empty dependency array is VERY IMPORTANT
+// using an empty dependency array is VERY IMPORTANT to avoid infinite render loop
 }, []); // eslint-disable-line <-- might need if using react-hooks/exhaustive-deps ESLint rule with autofix
 
 // Each render state takes a callback function
