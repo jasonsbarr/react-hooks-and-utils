@@ -1,6 +1,6 @@
 {
   "name": "@jasonsbarr/custom-hooks",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Custom React hooks",
   "keywords": [
     "React",
@@ -32,7 +32,7 @@
   },
   "gitHead": "a2b49530bea3f548e65fa04efa8f937374952279",
   "dependencies": {
-    "@jasonsbarr/reducer-utils": "~0.2.0",
+    "@jasonsbarr/reducer-utils": "^0.3.0",
     "axios": "^0.19.0"
   }
 }
