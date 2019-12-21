@@ -28,9 +28,8 @@ const useHttpRequest = ({
 
   const axios = Axios.create(config);
 
-  const handleRequest = (url, { config = {}, data = null }) => {
+  const handleRequest = (config = {}, data = null) => {
     const requestConfig = {
-      url,
       ...config,
     };
 
