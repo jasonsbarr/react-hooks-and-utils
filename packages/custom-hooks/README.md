@@ -10,5 +10,5 @@ npm install @jasonsbarr/custom-hooks
 
 ## Usage
 
-- [useLocalStorage](src/data-storage/)
-- [useHttpRequest](src/http-requests/)
+- [useLocalStorage](https://github.com/jasonsbarr/react-hooks-and-utils/tree/master/packages/custom-hooks/src/data-storage)
+- [useHttpRequest](https://github.com/jasonsbarr/react-hooks-and-utils/tree/master/packages/custom-hooks/src/http-requests)
