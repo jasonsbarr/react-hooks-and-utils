@@ -1,21 +1,24 @@
 {
   "name": "@jasonsbarr/custom-hooks",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "description": "Custom React hooks",
   "keywords": [
     "React",
     "hooks"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Jason Barr <jason@jasonsbarr.com>",
   "homepage": "https://github.com/jasonsbarr/react-hooks-and-utils#readme",
   "license": "MIT",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -27,6 +30,7 @@
   "bugs": {
     "url": "https://github.com/jasonsbarr/react-hooks-and-utils/issues"
   },
+  "gitHead": "1229f383f4c2e4acea5faa290949ac39095f70ef",
   "dependencies": {
     "axios": "^0.19.0"
   }

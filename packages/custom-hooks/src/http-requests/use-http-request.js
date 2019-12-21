@@ -1,30 +1,49 @@
 import { useState, useEffect, useReducer } from "react";
 import Axios from "axios";
 import { matchAsyncState as render } from "../utils";
-import reducer, { setPending, setSuccess, setError } from "./reducer";
+import reducer, {
+  setPending,
+  setSuccess,
+  setError,
+  setRequesting,
+  setConfig,
+} from "./reducer";
 
-export const useHttpRequest = (
-  url,
-  { initialState = {}, pendingState = {}, config = {} } = {},
-) => {
-  const [{ initial, pending, error, success }, dispatch] = useReducer(
-    reducer,
-    {
-      initial: initialState,
-      pending: null,
-      error: null,
-      success: null,
-    },
-  );
+const useHttpRequest = ({
+  config = {},
+  initialState = {},
+  pendingState = {},
+} = {}) => {
+  const [
+    { initial, pending, error, success, requesting, axiosConfig },
+    dispatch,
+  ] = useReducer(reducer, {
+    initial: initialState,
+    pending: pendingState,
+    error: null,
+    success: null,
+    requesting: false,
+    axiosConfig: config,
+  });
 
-  const [requesting, setRequesting] = useState(false);
+  const axios = Axios.create(config);
 
-  const handleRequest = () => setRequesting(true);
+  const handleRequest = (url, { config = {}, data = null }) => {
+    const requestConfig = {
+      url,
+      ...config,
+    };
+
+    if (data) requestConfig.data = data;
+
+    dispatch({ type: setConfig, payload: requestConfig });
+    dispatch({ type: setRequesting, payload: true });
+  };
 
   useEffect(() => {
     const makeRequest = async () => {
       dispatch({ type: setPending, payload: pendingState });
-      return await Axios({ url, ...config });
+      return await axios(axiosConfig);
     };
 
     if (requesting) {
@@ -35,7 +54,9 @@ export const useHttpRequest = (
         .catch(error => {
           dispatch({ type: setError, payload: error });
         })
-        .finally(() => setRequesting(false));
+        .finally(() =>
+          dispatch({ type: setRequesting, payload: false }),
+        );
     }
   }, [requesting]); // eslint-disable-line
 
@@ -44,3 +65,5 @@ export const useHttpRequest = (
     handleRequest,
   ];
 };
+
+export default useHttpRequest;
