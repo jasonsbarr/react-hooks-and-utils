@@ -10,7 +10,7 @@
     "access": "public"
   },
   "author": "Jason Barr <jason@jasonsbarr.com>",
-  "homepage": "https://github.com/jasonsbarr/react-hooks-and-utils#readme",
+  "homepage": "https://github.com/jasonsbarr/react-hooks-and-utils/tree/master/packages/custom-hooks#readme",
   "license": "MIT",
   "main": "index.js",
   "directories": {
