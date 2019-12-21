@@ -35,7 +35,7 @@ useEffect(() => {
     url: "/posts?_limit=10"
   })
 // using an empty dependency array is VERY IMPORTANT
-}, []); // eslint-disable-line <-- might need if using rules-of-hooks ESLint rule with autofix
+}, []); // eslint-disable-line <-- might need if using react-hooks/exhaustive-deps ESLint rule with autofix
 
 // Each render state takes a callback function
 return render({
