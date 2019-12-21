@@ -10,5 +10,5 @@ npm install @jasonsbarr/custom-hooks
 
 ## Usage
 
-- [useLocalStorage]("./src/data-storage/")
-- [useHttpRequest]("./src/http-requests/")
+- [useLocalStorage](src/data-storage/)
+- [useHttpRequest](src/http-requests/)
