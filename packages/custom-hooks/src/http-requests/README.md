@@ -74,3 +74,5 @@ return render({
   success: data => JSON.stringify(data) //-> If the response is good, this will render
 });
 ```
+
+<!-- TODO: show making a POST request -->
